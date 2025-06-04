@@ -1,0 +1,314 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;   
+  color: #4E4E4E;
+}
+
+header {
+  background-color: #F5F3EE;
+  color: #4A707A;
+  padding: 2.5rem 10rem;
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: #4A707A;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s;
+  vertical-align: middle;
+}
+
+nav a:hover {
+  color: #003866;
+}
+
+nav a img {
+    vertical-align: text-top;
+    width: 20px;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  background-color: #DDE6E2;
+  flex-wrap: wrap;
+}
+
+.hero .text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+  background-color: #2E4D42;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #4A707A;
+  color: white;
+}
+
+.hero .image img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.terapia, .procedimentos, .sobre, .depoimentos, .contato {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.terapia, .procedimentos h2, .sobre h2, .depoimentos h2, .contato h2 {
+  margin-bottom: 2rem;
+  color: #4A707A;
+}
+
+.terapia h2 {
+  margin-bottom: 2rem;
+}
+
+.terapia p {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.card h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.sobre .texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.sobre .imagem {
+  flex: 1;
+  max-width: 500px;
+}
+
+.sobre img {
+  max-height: 400px;
+  width: 100%; /* imagem ocupa todo o espaço do container */
+  height: auto;
+  border-radius: 8px; /* opcional: bordas arredondadas */
+  object-fit: cover;
+}
+
+.depoimentos {
+  max-width: 70%;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.depoimento img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comentario {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.nome {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.contato .btn {
+  margin-top: 1.5rem;
+  background-color: #2E4D42;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contato .btn:hover {
+  background-color: #1da851;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  .hero .text {
+    max-width: 100%;
+  }
+
+  .hero .image {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .hero .image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .procedimentos, .sobre, .depoimentos, .contato {
+    padding: 2rem 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .card {
+    padding: 2rem 1rem;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+}
