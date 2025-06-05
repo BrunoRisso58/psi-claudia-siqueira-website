@@ -65,9 +65,9 @@ nav a:hover {
   color: #003866;
 }
 
-nav a img {
-    vertical-align: text-top;
-    width: 20px;
+.btn img {
+  vertical-align: text-top;
+  width: 20px;
 }
 
 .hero {
@@ -119,7 +119,7 @@ nav a img {
   border-radius: 15px;
 }
 
-.terapia, .procedimentos, .sobre, .depoimentos, .contato {
+.terapia, .sobre, .depoimentos, .contato {
   padding: 4rem 2rem;
   text-align: center;
   max-width: 70%;
@@ -128,13 +128,9 @@ nav a img {
   font-family: 'Montserrat', sans-serif;
 }
 
-.terapia, .procedimentos h2, .sobre h2, .depoimentos h2, .contato h2 {
+.terapia h2, .sobre h2, .depoimentos h2, .contato h2 {
   margin-bottom: 2rem;
   color: #4A707A;
-}
-
-.terapia h2 {
-  margin-bottom: 2rem;
 }
 
 .terapia p {
@@ -145,6 +141,9 @@ nav a img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #4A707A;
 }
 
 .card {
@@ -174,6 +173,11 @@ nav a img {
   border-radius: 8px;
   object-fit: cover;
   margin-bottom: 1rem;
+}
+
+.cta-text {
+  color: #4A707A;
+  padding-bottom: 1rem;
 }
 
 .sobre {
@@ -206,7 +210,6 @@ nav a img {
 
 .depoimentos {
   max-width: 70%;
-  margin: 4rem auto;
   text-align: center;
 }
 
@@ -240,6 +243,12 @@ nav a img {
   color: #444;
 }
 
+.contato {
+  background-color: #DDE6E2;
+  text-align: center;
+  max-width: 100%;
+}
+
 .contato .btn {
   margin-top: 1.5rem;
   background-color: #2E4D42;
@@ -259,7 +268,12 @@ footer {
   color: black;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+}
+
+.sobre {
+  padding: 4rem 25rem;
+  min-width: 100%;
+  background-color: #F5F3EE;
 }
 
 @media (max-width: 1024px) {
@@ -289,6 +303,10 @@ footer {
   .hero .image img {
     max-width: 100%;
   }
+
+  .sobre {
+    padding: 4rem 10rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -310,5 +328,13 @@ footer {
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 1rem;
+  }
+
+  .sobre {
+    padding: 4rem 5rem;
+  }
+
+  .contato {
+    padding: 2rem;
   }
 }
