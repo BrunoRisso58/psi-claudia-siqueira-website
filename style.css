@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Lora', sans-serif;
   line-height: 1.6;
   background-color: #fff;   
   color: #4E4E4E;
@@ -25,11 +25,17 @@ header {
   flex-wrap: wrap;
   position: sticky;
   top: 0;
+  transition: all 0.3s ease;
+}
+
+.shrink {
+  padding: 1.5rem 10rem;
+  background-color: #DDE6E2;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -47,15 +53,15 @@ p {
 
 nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
 nav a {
   color: #4A707A;
   text-decoration: none;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   transition: color 0.3s;
   vertical-align: middle;
@@ -63,6 +69,10 @@ nav a {
 
 nav a:hover {
   color: #003866;
+}
+
+.nav-button {
+  margin-left: 25px
 }
 
 .btn img {
@@ -75,8 +85,8 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 30rem;
-  background-color: #DDE6E2;
+  padding: 6rem 30rem;
+  background-color: #F5F3EE;
   flex-wrap: wrap;
 }
 
@@ -93,7 +103,7 @@ nav a:hover {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn {
@@ -114,7 +124,8 @@ nav a:hover {
 
 .hero .image img {
   max-width: 500px;
-  height: auto;
+  height: 600px;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -208,7 +219,7 @@ nav a:hover {
 }
 
 .depoimentos {
-  max-width: 70%;
+  max-width: 90%;
   text-align: center;
 }
 
@@ -218,7 +229,7 @@ nav a:hover {
   gap: 1.5rem;
   margin-bottom: 2rem;
   background: #f9f9f9;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
   text-align: left;
 }
@@ -289,6 +300,7 @@ footer {
   .hero {
     padding: 4rem;
     justify-content: center;
+    text-align: center;
   }
 
   .hero .text {
@@ -304,13 +316,39 @@ footer {
     max-width: 100%;
   }
 
+  .terapia p {
+    text-align: start;
+  }
+
+  #cta-text {
+    text-align: center;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
   .sobre {
-    padding: 4rem 10rem;
+    padding: 4rem 5rem;
+    text-align: center;
+  }
+
+  .sobre .texto p {
+    text-align: start;
   }
 }
 
 @media (max-width: 768px) {
-  .procedimentos, .sobre, .depoimentos, .contato {
+  .shrink {
+    padding: 1.5rem 0;
+  }
+
+  .hero .image img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .terapia, .sobre, .depoimentos, .contato {
     padding: 2rem 0;
   }
 
@@ -331,7 +369,7 @@ footer {
   }
 
   .sobre {
-    padding: 4rem 5rem;
+    padding: 4rem 4rem;
   }
 
   .contato {
