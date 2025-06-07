@@ -129,7 +129,7 @@ nav a:hover {
   border-radius: 15px;
 }
 
-.terapia, .sobre, .depoimentos, .contato {
+.terapia, .sobre, .depoimentos, .faq, .contato {
   padding: 4rem 2rem;
   text-align: center;
   max-width: 70%;
@@ -138,7 +138,7 @@ nav a:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
-.terapia h2, .sobre h2, .depoimentos h2, .contato h2 {
+.terapia h2, .sobre h2, .depoimentos h2, .faq h2, .contato h2 {
   margin-bottom: 2rem;
   color: #4A707A;
 }
@@ -253,6 +253,34 @@ nav a:hover {
   color: #444;
 }
 
+.ondas {
+  width: 100%;
+  margin: -1rem 0;
+}
+
+.faq {
+  max-width: 100%;
+  padding: 4rem 8rem;
+  text-align: start;
+  background-color:#4A707A;
+  color: #F5F3EE;
+  font-family: 'Poppins';
+}
+
+.faq h2 {
+  text-align: center;
+  color: #F5F3EE;
+}
+
+.faq details {
+  padding: 1.5rem;
+  border-bottom: #003866 1px solid;
+}
+
+.faq details p {
+  padding: 1rem;
+}
+
 .contato {
   background-color: #DDE6E2;
   text-align: center;
@@ -269,10 +297,6 @@ nav a:hover {
   display: inline-block;
 }
 
-.contato .btn:hover {
-  background-color: #1da851;
-}
-
 footer {
   background-color: white;
   color: black;
@@ -286,15 +310,45 @@ footer {
   background-color: #F5F3EE;
 }
 
+@media (max-width: 1950px) {
+  .hero {
+    padding: 6rem 10rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobre {
+    padding: 4rem 12rem;
+  }
+
+  .faq {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .hero {
+    padding: 6rem 4rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  header {
+    justify-content: center;
+  }
+  nav {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
   header {
     padding-left: 0;
     padding-right: 0;
-    justify-content: center;
-  }
-  
-  nav {
-    display: none;
   }
 
   .hero {
@@ -370,6 +424,10 @@ footer {
 
   .sobre {
     padding: 4rem 4rem;
+  }
+
+  .faq {
+    max-width: 100%;
   }
 
   .contato {
