@@ -9,13 +9,13 @@
 body {
   font-family: 'Lora', sans-serif;
   line-height: 1.6;
-  background-color: #fff;   
-  color: #4E4E4E;
+  background-color: #F6E9DD;   
+  color: #6F3E20;
 }
 
 header {
-  background-color: #F5F3EE;
-  color: #4A707A;
+  background-color: #D8B89C;
+  color: #6F3E20;
   padding: 2.5rem 10rem;
   margin: auto;
   max-width: 100%;
@@ -30,7 +30,7 @@ header {
 
 .shrink {
   padding: 1.5rem 10rem;
-  background-color: #DDE6E2;
+  /* background-color: #DDE6E2; */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -51,14 +51,19 @@ p {
   height: 40px;
 }
 
+nav {
+  margin: auto;
+}
+
 nav ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   list-style: none;
+  align-items: center;
 }
 
 nav a {
-  color: #4A707A;
+  color: #6F3E20;
   text-decoration: none;
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
@@ -85,8 +90,8 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem 30rem;
-  background-color: #F5F3EE;
+  padding: 3rem 30rem;
+  background-color: #F6E9DD;
   flex-wrap: wrap;
 }
 
@@ -107,7 +112,7 @@ nav a:hover {
 }
 
 .btn {
-  background-color: #2E4D42;
+  background-color: #B87C4B;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
@@ -340,9 +345,6 @@ footer {
   header {
     justify-content: center;
   }
-  nav {
-    display: none;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -393,6 +395,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  
   .shrink {
     padding: 1.5rem 0;
   }
