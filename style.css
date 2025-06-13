@@ -9,12 +9,12 @@
 body {
   font-family: 'Lora', sans-serif;
   line-height: 1.6;
-  background-color: #F6E9DD;   
+  background-color: #F6E9DD;
   color: #6F3E20;
 }
 
 header {
-  background-color: #D8B89C;
+  background-color: #F6E9DD;
   color: #6F3E20;
   padding: 2.5rem 10rem;
   margin: auto;
@@ -42,7 +42,7 @@ p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
 }
@@ -65,15 +65,15 @@ nav ul {
 nav a {
   color: #6F3E20;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: color 0.3s;
   vertical-align: middle;
 }
 
 nav a:hover {
-  color: #003866;
+  color: #C97A7A;
 }
 
 .nav-button {
@@ -86,29 +86,53 @@ nav a:hover {
 }
 
 .hero {
-  margin: 0 auto;
   display: flex;
+  text-align: start;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 30rem;
+  padding: 0rem 22rem;
   background-color: #F6E9DD;
   flex-wrap: wrap;
 }
 
 .hero .text {
   max-width: 500px;
+  margin-left: 50px;
 }
 
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lora', sans-serif;
+}
+
+.hero h2 {
+  color: #4A2B15
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
+}
+
+.hero ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero ul li {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.hero ul li::before {
+  content: '✔';
+  color: #5D2B3D;
+  font-size: 1.5rem;
+  padding: .75rem;
 }
 
 .btn {
@@ -123,15 +147,13 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #4A707A;
+  background-color: #C97A7A;
   color: white;
 }
 
 .hero .image img {
-  max-width: 500px;
-  height: 600px;
-  object-fit: cover;
-  border-radius: 15px;
+  width: 600px;
+  object-fit:contain;
 }
 
 .terapia, .sobre, .depoimentos, .faq, .contato {
@@ -145,7 +167,7 @@ nav a:hover {
 
 .terapia h2, .sobre h2, .depoimentos h2, .faq h2, .contato h2 {
   margin-bottom: 2rem;
-  color: #4A707A;
+  color: #6F3E20;
 }
 
 .terapia p {
@@ -210,6 +232,12 @@ nav a:hover {
   min-width: 280px;
 }
 
+.cursive-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #B87C4B;
+}
+
 .sobre .imagem {
   flex: 1;
   max-width: 500px;
@@ -217,9 +245,9 @@ nav a:hover {
 
 .sobre img {
   max-height: 400px;
-  width: 100%; /* imagem ocupa todo o espaço do container */
+  width: 100%;
   height: auto;
-  border-radius: 8px; /* opcional: bordas arredondadas */
+  border-radius: 8px;
   object-fit: cover;
 }
 
