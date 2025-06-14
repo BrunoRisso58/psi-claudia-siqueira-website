@@ -153,10 +153,18 @@ nav a:hover {
 
 .hero .image img {
   width: 600px;
-  object-fit:contain;
+  object-fit: contain;
 }
 
-.terapia, .sobre, .depoimentos, .faq, .contato {
+.sombra {
+  width: 400px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, transparent 80%);
+  margin: -20px auto 0; /* sobe a sombra para perto dos pés */
+  border-radius: 50%;
+}
+
+.especialidades, .sobre, .faq, .contato {
   padding: 4rem 2rem;
   text-align: center;
   max-width: 70%;
@@ -165,39 +173,47 @@ nav a:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
-.terapia h2, .sobre h2, .depoimentos h2, .faq h2, .contato h2 {
+.especialidades h2, .sobre h2, .depoimentos h2, .faq h2, .contato h2 {
   margin-bottom: 2rem;
   color: #6F3E20;
 }
 
-.terapia p {
+.especialidades p {
   margin-bottom: 1rem;
 }
 
+.especialidades {
+  max-width: 100%;
+  background-color: #fdf4ed;
+}
+
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: #4A707A;
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 2rem;
-  border-radius: 8px;
-  transition: box-shadow 0.3s;
+  background: #fff; 
+  border-radius: 12px; 
+  margin-bottom: 12px;
+  padding: 20px; 
+  width: 220px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  flex: 0 0 calc(33.333% - 20px);
 }
 
 .card h3 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 12px;
+  font-size: 18px; 
+  margin-bottom: 10px;
 }
 
 .card p {
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; 
+  line-height: 1.5;
 }
 
 .card:hover {
@@ -205,15 +221,15 @@ nav a:hover {
 }
 
 .card img {
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
 }
 
 .cta-text {
-  color: #4A707A;
+  /* color: #4A707A; */
   padding-bottom: 1rem;
 }
 
@@ -350,10 +366,6 @@ footer {
 }
 
 @media (max-width: 1700px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .sobre {
     padding: 4rem 12rem;
   }
@@ -363,9 +375,15 @@ footer {
   }
 }
 
+@media (max-width: 1470px) {
+  .hero {
+    padding: 2rem 4rem;
+  }
+}
+
 @media (max-width: 1350px) {
   .hero {
-    padding: 6rem 4rem;
+    padding: 4rem 4rem;
   }
 }
 
@@ -400,7 +418,7 @@ footer {
     max-width: 100%;
   }
 
-  .terapia p {
+  .especialidades p {
     text-align: start;
   }
 
@@ -436,7 +454,7 @@ footer {
     object-fit: cover;
   }
 
-  .terapia, .sobre, .depoimentos, .contato {
+  .especialidades, .sobre, .depoimentos, .contato {
     padding: 2rem 0;
   }
 
@@ -481,4 +499,35 @@ footer {
   .sobre img {
     width: 300px;
   }
+}
+
+.depoimentos {
+  padding: 4rem 0rem;
+  max-width: 100%;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel {
+  display: flex;
+  width: calc(200%); /* espaço suficiente para o loop suave */
+  animation: scroll 30s linear infinite;
+}
+
+.carousel img {
+  width: 300px; /* ajuste o tamanho conforme o necessário */
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+/* Animação contínua da direita para a esquerda */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Move metade do conteúdo */
 }
