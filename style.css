@@ -122,8 +122,12 @@ nav a:hover {
   color: white;
 }
 
+#last-btn:hover {
+  background-color: #4A707A;
+}
+
 .hero .image img {
-  max-width: 500px;
+  width: 450px;
   height: 600px;
   object-fit: cover;
   border-radius: 15px;
@@ -205,13 +209,19 @@ nav a:hover {
   min-width: 280px;
 }
 
+.sobre .texto p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .sobre .imagem {
   flex: 1;
   max-width: 500px;
 }
 
 .sobre img {
-  max-height: 400px;
+  max-height: 520px;
   width: 100%; /* imagem ocupa todo o espaço do container */
   height: auto;
   border-radius: 8px; /* opcional: bordas arredondadas */
